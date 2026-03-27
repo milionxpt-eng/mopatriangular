@@ -24,8 +24,9 @@ const HeroSection = () => {
             <span className="text-gradient-gold">no pueden</span>
           </h1>
           <p className="text-muted-foreground text-lg md:text-xl mb-8 max-w-xl leading-relaxed">
-            Diseño triangular único + rotación 360° para limpiar esquinas, 
-            debajo de muebles y rincones imposibles. <strong className="text-foreground">Sin esfuerzo.</strong>
+            Diseño triangular único + rotación 360° para limpiar suelos, ventanas, 
+            techos y muebles. <strong className="text-foreground">4 en 1. Sin esfuerzo.</strong>
+          </p>
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <motion.a

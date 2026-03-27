@@ -14,6 +14,16 @@ const benefits = [
   },
   {
     icon: "🧹",
+    title: "4 en 1: Suelos, Ventanas, Techos y Muebles",
+    description: "Una sola herramienta para todas las superficies. Limpia suelos, cristales, techos y debajo de muebles."
+  },
+  {
+    icon: "🔄",
+    title: "Rotación 360° Completa",
+    description: "Gira en todas las direcciones. Limpia debajo de muebles, camas y sofás sin agacharte."
+  },
+  {
+    icon: "🧹",
     title: "Multifuncional 3 en 1",
     description: "Friega, barre y seca. Una sola herramienta para todas tus necesidades de limpieza."
   },
