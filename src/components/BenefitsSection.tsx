@@ -18,16 +18,6 @@ const benefits = [
     description: "Una sola herramienta para todas las superficies. Limpia suelos, cristales, techos y debajo de muebles."
   },
   {
-    icon: "🔄",
-    title: "Rotación 360° Completa",
-    description: "Gira en todas las direcciones. Limpia debajo de muebles, camas y sofás sin agacharte."
-  },
-  {
-    icon: "🧹",
-    title: "Multifuncional 3 en 1",
-    description: "Friega, barre y seca. Una sola herramienta para todas tus necesidades de limpieza."
-  },
-  {
     icon: "♻️",
     title: "Paños Lavables y Reutilizables",
     description: "Incluye paños de microfibra premium lavables. Ahorra dinero y cuida el medio ambiente."
