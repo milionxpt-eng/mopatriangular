@@ -14,8 +14,8 @@ const benefits = [
   },
   {
     icon: "🧹",
-    title: "Multifuncional 3 en 1",
-    description: "Friega, barre y seca. Una sola herramienta para todas tus necesidades de limpieza."
+    title: "4 en 1: Suelos, Ventanas, Techos y Muebles",
+    description: "Una sola herramienta para todas las superficies. Limpia suelos, cristales, techos y debajo de muebles."
   },
   {
     icon: "♻️",
