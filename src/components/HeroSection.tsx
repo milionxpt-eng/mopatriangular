@@ -36,12 +36,6 @@ const HeroSection = () => {
             >
               ¡QUIERO LA MÍA! →
             </motion.a>
-            <a
-              href="#beneficios"
-              className="border border-border text-foreground font-medium px-8 py-4 rounded-lg text-lg text-center hover:bg-secondary transition-colors"
-            >
-              Saber más
-            </a>
           </div>
           <div className="flex items-center gap-6 mt-8 text-sm text-muted-foreground">
             <span className="flex items-center gap-2">⭐⭐⭐⭐⭐ <span className="text-foreground font-semibold">4.9/5</span></span>
