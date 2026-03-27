@@ -27,7 +27,6 @@ const HeroSection = () => {
             Diseño triangular único + rotación 360° para limpiar suelos, ventanas, 
             techos y muebles. <strong className="text-foreground">4 en 1. Sin esfuerzo.</strong>
           </p>
-          </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <motion.a
               href="#oferta"
