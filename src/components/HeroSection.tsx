@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import mopaHero from "@/assets/mopa-hero.png";
+import mopaHero from "@/assets/mopa-real.jpg";
 
 const HeroSection = () => {
   return (
