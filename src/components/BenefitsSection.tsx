@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import antesDepois from "@/assets/antes-depois.jpg";
 
 const benefits = [
   {
