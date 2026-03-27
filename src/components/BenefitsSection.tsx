@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import antesDepois from "@/assets/antes-depois.jpg";
 
 const benefits = [
   {
@@ -66,13 +65,13 @@ const BenefitsSection = () => {
             viewport={{ once: true }}
             className="rounded-2xl overflow-hidden glow-gold"
           >
-            <img
-              src={antesDepois}
-              alt="Antes y después de usar la mopa triangular"
-              width={1024}
-              height={576}
-              loading="lazy"
-              className="w-full h-auto"
+            <video
+              src="/videos/mopa-vsl.mp4"
+              controls
+              playsInline
+              preload="metadata"
+              className="w-full h-auto rounded-2xl"
+              poster=""
             />
           </motion.div>
         </div>
