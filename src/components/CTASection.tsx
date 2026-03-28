@@ -25,10 +25,10 @@ const CTASection = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
           >
-            ¡LA QUIERO AHORA! — 29,99€ →
+            💳 ¡LA QUIERO AHORA! — PAGO CONTRA ENTREGA →
           </motion.a>
           <p className="text-sm text-muted-foreground mt-4">
-            Envío gratis · Devolución 30 días · Pago seguro
+            Envío gratis · Pagas al recibir · Devolución 30 días
           </p>
         </motion.div>
       </div>

@@ -4,7 +4,6 @@ import mopaHero from "@/assets/mopa-real.jpg";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-dark" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_hsl(38,80%,55%,0.08)_0%,_transparent_60%)]" />
 
@@ -34,13 +33,13 @@ const HeroSection = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
             >
-              ¡QUIERO LA MÍA! →
+              💳 ¡QUIERO LA MÍA! — PAGO CONTRA ENTREGA →
             </motion.a>
           </div>
           <div className="flex items-center gap-6 mt-8 text-sm text-muted-foreground">
-            <span className="flex items-center gap-2">⭐⭐⭐⭐⭐ <span className="text-foreground font-semibold">4.9/5</span></span>
+            <span className="flex items-center gap-2">⭐⭐⭐⭐⭐ <span className="text-foreground font-semibold">4,9/5</span></span>
             <span>+2.500 vendidas</span>
-            <span>🔒 Pago seguro</span>
+            <span>🔒 Pago contra entrega</span>
           </div>
         </motion.div>
 

@@ -33,7 +33,7 @@ const OfferSection = () => {
                 />
               </div>
               <div className="text-left">
-                <h3 className="font-display text-2xl font-bold mb-4">Pack Completo Incluye:</h3>
+                <h3 className="font-display text-2xl font-bold mb-4">El pack completo incluye:</h3>
                 <ul className="space-y-3 mb-8">
                   {[
                     "1x Mopa Triangular 360° Premium",
@@ -50,8 +50,8 @@ const OfferSection = () => {
                 </ul>
 
                 <div className="mb-6">
-                  <span className="text-muted-foreground line-through text-xl">49,99€</span>
-                  <span className="text-4xl font-black text-gradient-gold ml-4">29,99€</span>
+                  <span className="text-muted-foreground line-through text-xl">49,99 €</span>
+                  <span className="text-4xl font-black text-gradient-gold ml-4">29,99 €</span>
                 </div>
 
                 <motion.a
@@ -60,20 +60,20 @@ const OfferSection = () => {
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  🛒 COMPRAR AHORA — 29,99€
+                  💳 COMPRAR AHORA — PAGO CONTRA ENTREGA
                 </motion.a>
                 <p className="text-center text-sm text-muted-foreground mt-3">
-                  🔒 Pago 100% seguro · Devolución en 30 días
+                  🔒 Pagas al recibir en tu casa · Devolución en 30 días
                 </p>
               </div>
             </div>
           </div>
 
           <div className="flex flex-wrap justify-center gap-8 mt-12 text-muted-foreground text-sm">
-            <span>📦 Envío en 24-48h</span>
+            <span>📦 Envío en 24-48 h</span>
             <span>🔄 Devolución fácil 30 días</span>
             <span>🇪🇸 Envío desde España</span>
-            <span>💳 Visa, Mastercard, PayPal</span>
+            <span>💳 Pago contra entrega</span>
           </div>
         </motion.div>
       </div>
