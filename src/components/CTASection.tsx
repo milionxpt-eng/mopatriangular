@@ -27,7 +27,7 @@ const CTASection = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
           >
-            💳 ¡LA QUIERO AHORA! — PAGO CONTRA ENTREGA →
+            💳 PAGO CONTRA ENTREGA →
           </motion.a>
           <p className="text-xs sm:text-sm text-muted-foreground mt-4">
             Envío gratis · Pagas al recibir · Devolución 30 días

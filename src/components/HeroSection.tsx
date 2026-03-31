@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import mopaHero from "@/assets/mopa-4en1.png";
-import logo from "@/assets/logo-mynexa.png";
 
 const SHOPIFY_URL = "https://800edm-h1.myshopify.com/products/mopa-fregona-triangular-de-limpieza-ajustable-giratoria-de-360";
 
@@ -10,10 +9,6 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-dark" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_hsl(38,80%,55%,0.08)_0%,_transparent_60%)]" />
 
-      {/* Logo */}
-      <div className="absolute top-4 left-4 sm:top-6 sm:left-6 z-20">
-        <img src={logo} alt="MyNexa" className="h-8 sm:h-10" />
-      </div>
 
       <div className="container relative z-10 mx-auto px-4 sm:px-6 py-16 sm:py-20 grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
         <motion.div
@@ -38,7 +33,7 @@ const HeroSection = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
           >
-            💳 ¡LA QUIERO! — PAGO CONTRA ENTREGA →
+            💳 PAGO CONTRA ENTREGA →
           </motion.a>
           <div className="flex flex-wrap items-center gap-4 sm:gap-6 mt-6 sm:mt-8 text-xs sm:text-sm text-muted-foreground">
             <span className="flex items-center gap-1">⭐⭐⭐⭐⭐ <span className="text-foreground font-semibold">4,9/5</span></span>

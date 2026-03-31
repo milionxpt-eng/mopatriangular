@@ -26,6 +26,26 @@ const benefits = [
   }
 ];
 
+const salesCopy = `Mira… sé exactamente lo que te pasa.
+
+Empiezas a limpiar y, al rato, ya te duele la espalda.
+Te agachas, te estiras, te subes a una silla… y aun así, los rincones siguen ahí, esperando.
+
+Y lo peor no es la suciedad.
+Es el cansancio que te llevas después.
+
+Por eso existe MyNexa 360°.
+
+Su forma triangular llega justo donde tú no quieres volver a forzarte.
+Gira 360° para que no tengas que torcer el cuerpo.
+Y entra debajo de los muebles sin que tengas que arrodillarte.
+
+Limpias más rápido.
+Sin dolor.
+Sin esfuerzo absurdo.
+
+Porque limpiar tu casa no debería costarte el cuerpo.`;
+
 const BenefitsSection = () => {
   return (
     <section id="beneficios" className="py-16 sm:py-20 bg-secondary/30 relative">
@@ -44,43 +64,63 @@ const BenefitsSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-12 sm:mb-16">
-          <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
-            {benefits.map((benefit, index) => (
-              <motion.div
-                key={index}
-                className="bg-card rounded-xl p-5 sm:p-6 border-gradient-gold"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-              >
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-3 sm:mb-4">
-                  <benefit.icon className="w-6 h-6 text-gold" strokeWidth={2} />
-                </div>
-                <h3 className="text-base sm:text-lg font-bold mb-2 font-display">{benefit.title}</h3>
-                <p className="text-muted-foreground text-xs sm:text-sm">{benefit.description}</p>
-              </motion.div>
-            ))}
-          </div>
-
+        {/* VSL Video + Sales Copy */}
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 sm:mb-16">
           <motion.div
-            initial={{ opacity: 0, x: 40 }}
+            initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             className="rounded-2xl overflow-hidden glow-gold"
           >
-            <div className="aspect-[9/16] sm:aspect-video max-w-lg mx-auto">
+            <div className="aspect-[9/16] sm:aspect-video max-w-sm sm:max-w-lg mx-auto">
               <video
                 src="/videos/mopa-vsl.mp4"
                 controls
                 playsInline
                 preload="metadata"
                 className="w-full h-full object-cover rounded-2xl"
-                poster=""
               />
             </div>
           </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="space-y-1"
+          >
+            {salesCopy.split('\n').map((line, i) => (
+              <p key={i} className={`text-sm sm:text-base leading-relaxed ${
+                line === '' ? 'h-3' :
+                line.startsWith('Por eso existe') ? 'text-gold font-bold text-base sm:text-lg' :
+                line.startsWith('Limpias más') || line.startsWith('Sin dolor') || line.startsWith('Sin esfuerzo') ? 'text-foreground font-semibold' :
+                line.startsWith('Porque limpiar') ? 'text-gold font-bold italic text-base sm:text-lg pt-2' :
+                'text-muted-foreground'
+              }`}>
+                {line || '\u00A0'}
+              </p>
+            ))}
+          </motion.div>
+        </div>
+
+        {/* Benefits Grid */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12 sm:mb-16">
+          {benefits.map((benefit, index) => (
+            <motion.div
+              key={index}
+              className="bg-card rounded-xl p-5 sm:p-6 border-gradient-gold"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+            >
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-3 sm:mb-4">
+                <benefit.icon className="w-6 h-6 text-gold" strokeWidth={2} />
+              </div>
+              <h3 className="text-base sm:text-lg font-bold mb-2 font-display">{benefit.title}</h3>
+              <p className="text-muted-foreground text-xs sm:text-sm">{benefit.description}</p>
+            </motion.div>
+          ))}
         </div>
 
         <motion.div
@@ -95,7 +135,7 @@ const BenefitsSection = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
           >
-            💳 ¡QUIERO LA MÍA! — PAGO CONTRA ENTREGA →
+            💳 PAGO CONTRA ENTREGA →
           </motion.a>
         </motion.div>
       </div>
