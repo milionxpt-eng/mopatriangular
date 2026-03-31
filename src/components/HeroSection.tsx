@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import mopaHero from "@/assets/mopa-4en1.png";
-import logo from "@/assets/logo-mynexa.png";
 
 const SHOPIFY_URL = "https://800edm-h1.myshopify.com/products/mopa-fregona-triangular-de-limpieza-ajustable-giratoria-de-360";
 
