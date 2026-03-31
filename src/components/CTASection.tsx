@@ -23,8 +23,6 @@ const CTASection = () => {
           </p>
           <motion.a
             href={SHOPIFY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
             className="inline-block bg-gradient-gold text-primary-foreground font-bold px-8 sm:px-12 py-4 sm:py-5 rounded-lg text-base sm:text-xl animate-pulse-gold"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}

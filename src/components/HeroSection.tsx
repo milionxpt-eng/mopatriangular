@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import mopaHero from "@/assets/mopa-real.jpg";
+import mopaHero from "@/assets/mopa-4en1.png";
+import logo from "@/assets/logo-mynexa.png";
 
 const SHOPIFY_URL = "https://800edm-h1.myshopify.com/products/mopa-fregona-triangular-de-limpieza-ajustable-giratoria-de-360";
 
@@ -8,6 +9,11 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0 bg-gradient-dark" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_hsl(38,80%,55%,0.08)_0%,_transparent_60%)]" />
+
+      {/* Logo */}
+      <div className="absolute top-4 left-4 sm:top-6 sm:left-6 z-20">
+        <img src={logo} alt="MyNexa" className="h-8 sm:h-10" />
+      </div>
 
       <div className="container relative z-10 mx-auto px-4 sm:px-6 py-16 sm:py-20 grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
         <motion.div
@@ -28,8 +34,6 @@ const HeroSection = () => {
           </p>
           <motion.a
             href={SHOPIFY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
             className="block sm:inline-block bg-gradient-gold text-primary-foreground font-bold px-6 sm:px-8 py-4 rounded-lg text-base sm:text-lg text-center animate-pulse-gold"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
@@ -53,10 +57,10 @@ const HeroSection = () => {
           <div className="absolute inset-0 bg-[radial-gradient(circle,_hsl(38,80%,55%,0.15)_0%,_transparent_70%)]" />
           <img
             src={mopaHero}
-            alt="Mopa Triangular 360° Multifuncional"
+            alt="Mopa Triangular 360° — 4 en 1: Suelos, Ventanas, Techos, Muebles"
             width={800}
             height={800}
-            className="relative z-10 max-w-[250px] sm:max-w-[300px] md:max-w-md lg:max-w-lg animate-float drop-shadow-2xl"
+            className="relative z-10 max-w-[280px] sm:max-w-[350px] md:max-w-md lg:max-w-lg animate-float drop-shadow-2xl rounded-2xl"
           />
         </motion.div>
       </div>

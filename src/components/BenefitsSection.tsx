@@ -1,25 +1,26 @@
 import { motion } from "framer-motion";
+import { Triangle, RotateCw, Sparkles, Recycle } from "lucide-react";
 
 const SHOPIFY_URL = "https://800edm-h1.myshopify.com/products/mopa-fregona-triangular-de-limpieza-ajustable-giratoria-de-360";
 
 const benefits = [
   {
-    icon: "🔺",
+    icon: Triangle,
     title: "Diseño Triangular Único",
     description: "Llega a cada esquina y rincón sin esfuerzo. La forma triangular se adapta perfectamente a los ángulos de tu hogar."
   },
   {
-    icon: "🔄",
+    icon: RotateCw,
     title: "Rotación 360° Completa",
     description: "Gira en todas las direcciones. Limpia debajo de muebles, camas y sofás sin agacharte ni mover nada."
   },
   {
-    icon: "🧹",
+    icon: Sparkles,
     title: "4 en 1: Suelos, Ventanas, Techos y Muebles",
     description: "Una sola herramienta para todas las superficies. Sustituye a 4 productos diferentes. Ahorra espacio y dinero."
   },
   {
-    icon: "♻️",
+    icon: Recycle,
     title: "Paños Lavables y Reutilizables",
     description: "Incluye paños de microfibra premium lavables hasta 300 veces. Ahorra dinero y cuida el medio ambiente."
   }
@@ -54,7 +55,9 @@ const BenefitsSection = () => {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <span className="text-3xl sm:text-4xl mb-3 sm:mb-4 block">{benefit.icon}</span>
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-3 sm:mb-4">
+                  <benefit.icon className="w-6 h-6 text-gold" strokeWidth={2} />
+                </div>
                 <h3 className="text-base sm:text-lg font-bold mb-2 font-display">{benefit.title}</h3>
                 <p className="text-muted-foreground text-xs sm:text-sm">{benefit.description}</p>
               </motion.div>
@@ -88,8 +91,6 @@ const BenefitsSection = () => {
         >
           <motion.a
             href={SHOPIFY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
             className="inline-block bg-gradient-gold text-primary-foreground font-bold px-8 sm:px-12 py-4 sm:py-5 rounded-lg text-base sm:text-xl animate-pulse-gold"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}

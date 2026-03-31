@@ -1,16 +1,16 @@
+import logo from "@/assets/logo-mynexa.png";
+
 const FooterSection = () => {
   return (
     <footer className="py-12 border-t border-border">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 text-center md:text-left">
           <div>
-            <h3 className="font-display text-xl font-bold text-gradient-gold mb-3">
-              MopaTriangular360.es
-            </h3>
-            <p className="text-muted-foreground text-sm">
-              La mopa que revoluciona la limpieza del hogar en España.
+            <img src={logo} alt="MyNexa" className="h-8 mb-4 mx-auto md:mx-0" />
+            <p className="text-muted-foreground text-sm mb-6">
+              Productos innovadores que simplifican tu día a día.
             </p>
-            <div className="mt-4">
+            <div>
               <h4 className="font-semibold mb-3 text-foreground">Información</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li><a href="#" className="hover:text-gold transition-colors">Política de privacidad</a></li>
@@ -33,7 +33,7 @@ const FooterSection = () => {
           </div>
         </div>
         <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
-          © 2026 MopaTriangular360.es — Todos los derechos reservados
+          © 2026 MyNexa — Todos los derechos reservados
         </div>
       </div>
     </footer>

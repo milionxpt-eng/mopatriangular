@@ -1,6 +1,25 @@
 import { motion } from "framer-motion";
+import { ShieldCheck, Truck, RotateCcw } from "lucide-react";
 
 const SHOPIFY_URL = "https://800edm-h1.myshopify.com/products/mopa-fregona-triangular-de-limpieza-ajustable-giratoria-de-360";
+
+const guarantees = [
+  { 
+    icon: Truck, 
+    title: "Envío GRATIS en 24-48h", 
+    desc: "Recíbela en tu casa sin pagar ni un céntimo de envío. En toda España peninsular." 
+  },
+  { 
+    icon: ShieldCheck, 
+    title: "Pago seguro contra entrega", 
+    desc: "No pagas hasta que la tengas en tus manos. Sin riesgo, sin sorpresas." 
+  },
+  { 
+    icon: RotateCcw, 
+    title: "30 días de devolución", 
+    desc: "Si no te convence, te devolvemos el 100% del importe. Sin preguntas." 
+  },
+];
 
 const GuaranteeSection = () => {
   return (
@@ -13,7 +32,9 @@ const GuaranteeSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <span className="text-6xl sm:text-7xl mb-6 block">🛡️</span>
+          <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-primary/10 mb-6">
+            <ShieldCheck className="w-8 h-8 sm:w-10 sm:h-10 text-gold" strokeWidth={2.5} />
+          </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-6">
             Garantía <span className="text-gradient-gold">100% sin riesgo</span>
           </h2>
@@ -23,11 +44,7 @@ const GuaranteeSection = () => {
           </p>
 
           <div className="grid sm:grid-cols-3 gap-4 sm:gap-6 mb-10">
-            {[
-              { icon: "📦", title: "Envío GRATIS", desc: "En toda España. Recíbela en 24-48h." },
-              { icon: "💳", title: "Pago contra entrega", desc: "Solo pagas cuando la tienes en tus manos." },
-              { icon: "🔄", title: "30 días devolución", desc: "Si no te gusta, te devolvemos el 100%." },
-            ].map((item, i) => (
+            {guarantees.map((item, i) => (
               <motion.div
                 key={i}
                 className="bg-card border-gradient-gold rounded-xl p-5 sm:p-6"
@@ -36,7 +53,9 @@ const GuaranteeSection = () => {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.15 }}
               >
-                <span className="text-3xl sm:text-4xl mb-3 block">{item.icon}</span>
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-3">
+                  <item.icon className="w-6 h-6 text-gold" strokeWidth={2} />
+                </div>
                 <h3 className="font-bold text-base sm:text-lg mb-1 font-display">{item.title}</h3>
                 <p className="text-muted-foreground text-xs sm:text-sm">{item.desc}</p>
               </motion.div>
@@ -45,8 +64,6 @@ const GuaranteeSection = () => {
 
           <motion.a
             href={SHOPIFY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
             className="inline-block bg-gradient-gold text-primary-foreground font-bold px-8 sm:px-12 py-4 sm:py-5 rounded-lg text-base sm:text-xl animate-pulse-gold"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
