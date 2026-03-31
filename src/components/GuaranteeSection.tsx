@@ -68,7 +68,7 @@ const GuaranteeSection = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
           >
-            💳 PEDIR AHORA — PAGO CONTRA ENTREGA →
+            💳 PAGO CONTRA ENTREGA →
           </motion.a>
         </motion.div>
       </div>

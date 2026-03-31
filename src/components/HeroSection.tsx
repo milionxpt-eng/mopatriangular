@@ -34,7 +34,7 @@ const HeroSection = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
           >
-            💳 ¡LA QUIERO! — PAGO CONTRA ENTREGA →
+            💳 PAGO CONTRA ENTREGA →
           </motion.a>
           <div className="flex flex-wrap items-center gap-4 sm:gap-6 mt-6 sm:mt-8 text-xs sm:text-sm text-muted-foreground">
             <span className="flex items-center gap-1">⭐⭐⭐⭐⭐ <span className="text-foreground font-semibold">4,9/5</span></span>
