@@ -10,10 +10,6 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-dark" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_hsl(38,80%,55%,0.08)_0%,_transparent_60%)]" />
 
-      {/* Logo */}
-      <div className="absolute top-4 left-4 sm:top-6 sm:left-6 z-20">
-        <img src={logo} alt="MyNexa" className="h-8 sm:h-10" />
-      </div>
 
       <div className="container relative z-10 mx-auto px-4 sm:px-6 py-16 sm:py-20 grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
         <motion.div
