@@ -6,7 +6,7 @@ const FooterSection = () => {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 text-center md:text-left">
           <div>
-            <img src={logo} alt="MyNexa" className="h-12 sm:h-14 mb-4 mx-auto md:mx-0" />
+            <img src={logo} alt="MyNexa" className="h-16 sm:h-20 mb-4 mx-auto md:mx-0" />
             <p className="text-muted-foreground text-sm mb-6">
               Productos innovadores que simplifican tu día a día.
             </p>
