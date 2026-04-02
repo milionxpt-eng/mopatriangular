@@ -70,7 +70,7 @@ const BenefitsSection = () => {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="rounded-2xl overflow-hidden glow-gold"
+            className="glass rounded-2xl overflow-hidden glow-gold p-4"
           >
             <div className="aspect-[9/16] sm:aspect-video max-w-sm sm:max-w-lg mx-auto">
               <video
