@@ -36,7 +36,7 @@ const bottomReviews = [
 ];
 
 const ReviewCard = ({ review }: { review: typeof topReviews[0] }) => (
-  <div className="flex-shrink-0 w-[340px] bg-card border-gradient-gold rounded-xl p-5 mx-3">
+  <div className="flex-shrink-0 w-[340px] glass border-gradient-gold rounded-xl p-5 mx-3">
     <div className="flex items-center gap-3 mb-3">
       <img src={review.photo} alt={review.name} className="w-10 h-10 rounded-full object-cover" loading="lazy" width={40} height={40} />
       <div>

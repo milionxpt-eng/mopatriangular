@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     question: "¿Puedo devolver el producto?",
-    answer: "Tienes 30 días desde la recepción para devolverlo si no estás satisfecho. Sin preguntas. Te devolvemos el 100% del importe."
+    answer: "Tienes 7 días desde la recepción para devolverlo si no estás satisfecho. Sin preguntas. Te devolvemos el 100% del importe."
   },
   {
     question: "¿El cabezal triangular es resistente?",
@@ -59,7 +59,7 @@ const FAQSection = () => {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="bg-card border-gradient-gold rounded-xl px-6 border-none"
+                className="glass border-gradient-gold rounded-xl px-6 border-none"
               >
                 <AccordionTrigger className="text-left font-display text-lg font-semibold hover:text-gold transition-colors hover:no-underline">
                   {faq.question}

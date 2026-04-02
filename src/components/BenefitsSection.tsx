@@ -48,7 +48,7 @@ Porque limpiar tu casa no debería costarte el cuerpo.`;
 
 const BenefitsSection = () => {
   return (
-    <section id="beneficios" className="py-16 sm:py-20 bg-secondary/30 relative">
+    <section id="beneficios" className="py-16 sm:py-20 relative">
       <div className="container mx-auto px-4 sm:px-6">
         <motion.div
           className="text-center mb-12 sm:mb-16"
@@ -70,7 +70,7 @@ const BenefitsSection = () => {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="rounded-2xl overflow-hidden glow-gold"
+            className="glass rounded-2xl overflow-hidden glow-gold p-4"
           >
             <div className="aspect-[9/16] sm:aspect-video max-w-sm sm:max-w-lg mx-auto">
               <video
@@ -108,7 +108,7 @@ const BenefitsSection = () => {
           {benefits.map((benefit, index) => (
             <motion.div
               key={index}
-              className="bg-card rounded-xl p-5 sm:p-6 border-gradient-gold"
+              className="glass rounded-xl p-5 sm:p-6 border-gradient-gold"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

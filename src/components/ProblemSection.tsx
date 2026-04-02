@@ -47,7 +47,7 @@ const ProblemSection = () => {
           {problems.map((problem, index) => (
             <motion.div
               key={index}
-              className="border-gradient-gold bg-card rounded-xl p-5 sm:p-6 hover:bg-secondary transition-colors"
+              className="glass border-gradient-gold rounded-xl p-5 sm:p-6 hover:bg-secondary/40 transition-colors"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

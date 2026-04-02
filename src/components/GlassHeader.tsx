@@ -33,7 +33,7 @@ const GlassHeader = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/60 backdrop-blur-xl border-b border-border/40">
       <div className="container mx-auto px-4 sm:px-6 h-14 sm:h-16 flex items-center justify-between">
-        <img src={logo} alt="MyNexa" className="h-7 sm:h-9" />
+        <img src={logo} alt="MyNexa" className="h-10 sm:h-12" />
 
         <div className="flex items-center gap-2 sm:gap-3">
           <span className="hidden sm:inline text-xs text-destructive font-bold uppercase tracking-wider animate-pulse">
