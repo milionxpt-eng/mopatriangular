@@ -71,6 +71,23 @@ const BenefitsSection = () => {
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
+              className="flex-shrink-0"
+            >
+              <div className="w-[220px] sm:w-[260px] md:w-[280px] aspect-[9/16] rounded-2xl overflow-hidden border border-border/30">
+                <video
+                  src="/videos/mopa-vsl.mp4"
+                  controls
+                  playsInline
+                  preload="metadata"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
               className="space-y-1 flex-1 min-w-0"
             >
               {salesCopy.split('\n').map((line, i) => (
@@ -84,23 +101,6 @@ const BenefitsSection = () => {
                   {line || '\u00A0'}
                 </p>
               ))}
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="flex-shrink-0"
-            >
-              <div className="w-[220px] sm:w-[260px] md:w-[280px] aspect-[9/16] rounded-2xl overflow-hidden border border-border/30">
-                <video
-                  src="/videos/mopa-vsl.mp4"
-                  controls
-                  playsInline
-                  preload="metadata"
-                  className="w-full h-full object-cover"
-                />
-              </div>
             </motion.div>
           </div>
         </div>
