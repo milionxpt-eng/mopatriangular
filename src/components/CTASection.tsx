@@ -4,7 +4,7 @@ const SHOPIFY_URL = "https://800edm-h1.myshopify.com/products/mopa-fregona-trian
 
 const CTASection = () => {
   return (
-    <section className="py-16 sm:py-20 bg-secondary/30 relative overflow-hidden">
+    <section className="py-16 sm:py-20 relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(38,80%,55%,0.08)_0%,_transparent_50%)]" />
       <div className="container mx-auto px-4 sm:px-6 relative z-10 text-center">
         <motion.div

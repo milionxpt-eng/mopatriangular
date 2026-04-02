@@ -2,7 +2,7 @@ import logo from "@/assets/logo-mynexa.png";
 
 const FooterSection = () => {
   return (
-    <footer className="py-12 border-t border-border">
+    <footer className="py-12 glass border-t border-border/40">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 text-center md:text-left">
           <div>

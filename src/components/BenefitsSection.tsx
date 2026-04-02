@@ -108,7 +108,7 @@ const BenefitsSection = () => {
           {benefits.map((benefit, index) => (
             <motion.div
               key={index}
-              className="bg-card rounded-xl p-5 sm:p-6 border-gradient-gold"
+              className="glass rounded-xl p-5 sm:p-6 border-gradient-gold"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
