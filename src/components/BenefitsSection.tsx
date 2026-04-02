@@ -64,43 +64,45 @@ const BenefitsSection = () => {
           </p>
         </motion.div>
 
-        {/* VSL Video + Sales Copy */}
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 sm:mb-16">
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="glass rounded-2xl overflow-hidden glow-gold p-4"
-          >
-            <div className="aspect-[9/16] sm:aspect-video max-w-sm sm:max-w-lg mx-auto">
-              <video
-                src="/videos/mopa-vsl.mp4"
-                controls
-                playsInline
-                preload="metadata"
-                className="w-full h-full object-cover rounded-2xl"
-              />
-            </div>
-          </motion.div>
+        {/* VSL Video + Sales Copy — mesma secção, copy à esquerda, vídeo vertical à direita */}
+        <div className="glass rounded-2xl glow-gold p-6 sm:p-8 mb-12 sm:mb-16">
+          <div className="grid lg:grid-cols-[1fr,auto] gap-8 lg:gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="space-y-1 order-2 lg:order-1"
+            >
+              {salesCopy.split('\n').map((line, i) => (
+                <p key={i} className={`text-sm sm:text-base leading-relaxed ${
+                  line === '' ? 'h-3' :
+                  line.startsWith('Por eso existe') ? 'text-gold font-bold text-base sm:text-lg' :
+                  line.startsWith('Limpias más') || line.startsWith('Sin dolor') || line.startsWith('Sin esfuerzo') ? 'text-foreground font-semibold' :
+                  line.startsWith('Porque limpiar') ? 'text-gold font-bold italic text-base sm:text-lg pt-2' :
+                  'text-muted-foreground'
+                }`}>
+                  {line || '\u00A0'}
+                </p>
+              ))}
+            </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="space-y-1"
-          >
-            {salesCopy.split('\n').map((line, i) => (
-              <p key={i} className={`text-sm sm:text-base leading-relaxed ${
-                line === '' ? 'h-3' :
-                line.startsWith('Por eso existe') ? 'text-gold font-bold text-base sm:text-lg' :
-                line.startsWith('Limpias más') || line.startsWith('Sin dolor') || line.startsWith('Sin esfuerzo') ? 'text-foreground font-semibold' :
-                line.startsWith('Porque limpiar') ? 'text-gold font-bold italic text-base sm:text-lg pt-2' :
-                'text-muted-foreground'
-              }`}>
-                {line || '\u00A0'}
-              </p>
-            ))}
-          </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="order-1 lg:order-2 flex justify-center"
+            >
+              <div className="w-[260px] sm:w-[280px] aspect-[9/16] rounded-2xl overflow-hidden border border-border/30">
+                <video
+                  src="/videos/mopa-vsl.mp4"
+                  controls
+                  playsInline
+                  preload="metadata"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </motion.div>
+          </div>
         </div>
 
         {/* Benefits Grid */}
