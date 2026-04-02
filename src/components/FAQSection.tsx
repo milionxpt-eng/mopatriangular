@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     question: "¿Puedo devolver el producto?",
-    answer: "Tienes 30 días desde la recepción para devolverlo si no estás satisfecho. Sin preguntas. Te devolvemos el 100% del importe."
+    answer: "Tienes 7 días desde la recepción para devolverlo si no estás satisfecho. Sin preguntas. Te devolvemos el 100% del importe."
   },
   {
     question: "¿El cabezal triangular es resistente?",

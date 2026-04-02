@@ -30,7 +30,7 @@ const CTASection = () => {
             💳 PAGO CONTRA ENTREGA →
           </motion.a>
           <p className="text-xs sm:text-sm text-muted-foreground mt-4">
-            Envío gratis · Pagas al recibir · Devolución 30 días
+            Envío gratis · Pagas al recibir · Devolución 7 días
           </p>
         </motion.div>
       </div>

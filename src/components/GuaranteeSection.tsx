@@ -16,7 +16,7 @@ const guarantees = [
   },
   { 
     icon: RotateCcw, 
-    title: "30 días de devolución", 
+    title: "7 días de devolución", 
     desc: "Si no te convence, te devolvemos el 100% del importe. Sin preguntas." 
   },
 ];
