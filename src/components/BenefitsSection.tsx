@@ -48,7 +48,7 @@ Porque limpiar tu casa no debería costarte el cuerpo.`;
 
 const BenefitsSection = () => {
   return (
-    <section id="beneficios" className="py-16 sm:py-20 bg-secondary/30 relative">
+    <section id="beneficios" className="py-16 sm:py-20 relative">
       <div className="container mx-auto px-4 sm:px-6">
         <motion.div
           className="text-center mb-12 sm:mb-16"
