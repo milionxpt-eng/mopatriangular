@@ -66,12 +66,12 @@ const BenefitsSection = () => {
 
         {/* VSL Video + Sales Copy — mesma secção, copy à esquerda, vídeo vertical à direita */}
         <div className="glass rounded-2xl glow-gold p-6 sm:p-8 mb-12 sm:mb-16">
-          <div className="grid lg:grid-cols-[1fr,auto] gap-8 lg:gap-12 items-center">
+          <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="space-y-1 order-2 lg:order-1"
+              className="space-y-1 flex-1 min-w-0"
             >
               {salesCopy.split('\n').map((line, i) => (
                 <p key={i} className={`text-sm sm:text-base leading-relaxed ${
@@ -90,9 +90,9 @@ const BenefitsSection = () => {
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="order-1 lg:order-2 flex justify-center"
+              className="flex-shrink-0"
             >
-              <div className="w-[260px] sm:w-[280px] aspect-[9/16] rounded-2xl overflow-hidden border border-border/30">
+              <div className="w-[220px] sm:w-[260px] md:w-[280px] aspect-[9/16] rounded-2xl overflow-hidden border border-border/30">
                 <video
                   src="/videos/mopa-vsl.mp4"
                   controls
