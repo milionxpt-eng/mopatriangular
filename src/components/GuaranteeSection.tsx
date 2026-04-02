@@ -38,8 +38,8 @@ const GuaranteeSection = () => {
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-6">
             Garantía <span className="text-gradient-gold">100% sin riesgo</span>
           </h2>
-          <p className="text-muted-foreground text-base sm:text-lg mb-8 leading-relaxed max-w-2xl mx-auto">
-            Estamos tan seguros de que te va a encantar que te damos <strong className="text-foreground">30 días para probarla</strong>. 
+            <p className="text-muted-foreground text-base sm:text-lg mb-8 leading-relaxed max-w-2xl mx-auto">
+            Estamos tan seguros de que te va a encantar que te damos <strong className="text-foreground">7 días para probarla</strong>. 
             Si no te convence, te devolvemos el dinero. Sin preguntas, sin excusas, sin letra pequeña.
           </p>
 
